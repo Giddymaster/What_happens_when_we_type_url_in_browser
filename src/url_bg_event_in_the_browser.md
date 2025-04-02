@@ -43,7 +43,7 @@ Server parses the message, understands and Loads the request file from either th
 
 ### Sending the request back
 
-The loaded information file from server is wrapped into `HTTP Response` and is sent back on the same TCP connection.
+The loaded information file from server is wrapped into `HTTP Response` and is sent back on the same TCP connection.The server processes the request and sends back the response. For a successful response, the status code is 200. There are 3 parts in the response: HTML, CSS and Javascript.
 
 How?  
 
@@ -54,6 +54,8 @@ How?
 
 ### Browser upon receiving the response
 
-Browser parses the message/response and renders it in the browser and incase of file that browser does kno how to open, eg. a pdf, it downloads it locally.
+The browser parses HTML and generates DOM tree. It also parses CSS and generates CSSOM tree. It then combines DOM tree and CSSOM tree to render tree. The browser renders the content and display to the user.  
+
+Incase of file that browser does kno how to open, eg. a pdf, it downloads it locally.
 
 If  the response is linked to other files such as CSS files, Image tags it fetches the additional files by repeating the whole process but incase of JavaScript code, the browser starts executing it.
