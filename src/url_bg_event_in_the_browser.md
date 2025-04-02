@@ -1,4 +1,4 @@
-# What happens we type a url in the browser
+# What happens when we type a url in the browser
 
 Example: https://www.google.com/facebook
 
@@ -46,3 +46,4 @@ How?
 Browser parses the message/response and renders it in the browser and incase of file that browser does kno how to open, eg. a pdf, it downloads it locally.
 
 If  the response is linked to other files such as CSS files, Image tags it fetches the additional files by repeating the whole process but incase of JavaScript code, the browser starts executing it.
+ucdsvbdf
